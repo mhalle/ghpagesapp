@@ -2,9 +2,9 @@ name: Deploy
 
 on:
   push:
-    branches: [$default-branch]
+    branches: master
 
-permissions:
+perimssions:
     contents: read
     pages: write
     id-token: write
@@ -12,7 +12,6 @@ permissions:
 concurrency:
     group: pages
     cancel-in-progress: false
-
 
 jobs:
   build:
