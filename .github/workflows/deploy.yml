@@ -35,7 +35,7 @@ jobs:
           path: ./dist
 
   deploy:
-    name: Deploy
+    name: Deploy official
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
